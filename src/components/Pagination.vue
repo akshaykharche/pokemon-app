@@ -1,10 +1,10 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
     <div class="d-flex justify-content-between">
-        <button class="btn btn-link" v-bind:disabled="state.isPreviousButtonDisable" @click="setPrevious">
+        <button class="btn btn-link" name="previous-button" :disabled="state.isPreviousButtonDisable" @click="setPrevious">
             previous
         </button>
-        <button class="btn btn-link" @click="setNext">next</button>
+        <button class="btn btn-link" name="next-button" @click="setNext">next</button>
     </div>
 </template>
 
